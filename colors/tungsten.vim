@@ -1,5 +1,5 @@
-" vim color theme: tungsten
-
+" my vim color theme: tungsten
+"
 " theme colors
 let s:light1  = 254 "e4e4e4
 let s:light2  = 252 "d0d0d0
@@ -9,15 +9,13 @@ let s:dark2   = 236 "303030
 let s:dark3   = 235 "262626
 let s:dark4   = 234 "1c1c1c
 let s:green1  = 77 "5fd75f
-let s:green2  = 65 "5f875f
-let s:green3  = 121 "87ffaf
+let s:green2  = 115 "87d7af
 let s:blue1   = 110 "87afd7
-let s:blue2   = 109 "87afaf
+let s:blue2   = 60 "5f5f87
 let s:purple1 = 138 "af8787
-let s:yellow1 = 186 "dfdf87
+let s:yellow1 = 187 "dfdfaf
 let s:red1    = 131 "af5f5f
-let s:red2    = 160 "d70000
-let s:orange1 = 179 "dfaf5f
+let s:orange1 = 180 "dfaf87
 
 
 set background=dark
@@ -57,7 +55,7 @@ call Tungsten("CursorLine", "", s:dark1, "none")
 " call Tungsten("DiffDelete", "none", s:dark1, "none")
 " call Tungsten("DiffText", "none", s:dark1, "none")
 " call Tungsten("ErrorMsg", "none", s:dark1, "none")
-call Tungsten("VertSplit", s:green2, s:dark1, "none")
+call Tungsten("VertSplit", s:blue2, s:dark1, "none")
 call Tungsten("Folded", s:light3, s:dark3, "none")
 " call Tungsten("FoldColumn", "none", s:dark1, "none")
 " call Tungsten("SignColumn", "none", s:dark1, "none")
@@ -68,15 +66,15 @@ call Tungsten("CursorLineNr", s:light1, s:dark2, "none")
 " call Tungsten("MoreMsg", "none", s:dark1, "none")
 call Tungsten("NonText", s:dark1, s:dark2, "none")
 call Tungsten("Normal", s:light2, s:dark2, "none")
-call Tungsten("Pmenu", "none", s:dark1, "none")
-call Tungsten("PmenuSel", "none", s:dark1, "none")
-call Tungsten("PmenSbar", "none", s:dark1, "none")
-call Tungsten("PmenuThumb", "none", s:dark1, "none")
+call Tungsten("Pmenu", s:light3, s:dark1, "none")
+call Tungsten("PmenuSel", s:light1, s:dark3, "none")
+call Tungsten("PmenSbar", "", s:dark1, "none")
+call Tungsten("PmenuThumb", "", s:dark1, "none")
 " call Tungsten("Question", "none", s:dark1, "none")
 call Tungsten("Search", "", "", "none")
 call Tungsten("SpecialKey", s:dark1, s:dark2, "none")
-call Tungsten("SpellBad", s:red2, s:dark2, "none")
-call Tungsten("SpellCap", s:purple1, s:dark2, "none")
+call Tungsten("SpellBad", "", "", "underline")
+call Tungsten("SpellCap", "", "", "underline")
 " call Tungsten("SpellLocal", "none", s:dark1, "none")
 " call Tungsten("SpellRare", "none", s:dark1, "none")
 " call Tungsten("StatusLine", "none", s:dark1, "none")
@@ -92,7 +90,7 @@ call Tungsten("Visual", "", s:dark3, "none")
 " }}}
 " {{{ highlight groups
 
-call Tungsten("Comment", s:green2, "", "")
+call Tungsten("Comment", s:blue2, "", "")
 call Tungsten("Constant", s:orange1, "", "")
 call Tungsten("String", s:purple1, "", "")
 call Tungsten("Character", s:purple1, "", "")
@@ -100,7 +98,7 @@ call Tungsten("Number", s:blue1, "", "")
 call Tungsten("Boolean", s:green1, "", "")
 call Tungsten("Float", s:blue1, "", "")
 
-call Tungsten("Identifier", s:green3, "", "none")
+call Tungsten("Identifier", s:green2, "", "none")
 call Tungsten("Function", s:red1, "", "none")
 
 call Tungsten("Statement", s:orange1, "", "")
@@ -117,7 +115,7 @@ call Tungsten("Define", "", "", "none")
 call Tungsten("Macro", "", "", "none")
 call Tungsten("PreCondit", s:purple1, "", "none")
 
-call Tungsten("Type", s:green3, "", "none")
+call Tungsten("Type", s:green2, "", "none")
 call Tungsten("StorageClass", s:blue1, "", "none")
 call Tungsten("Structure", "", "", "")
 call Tungsten("Typedef", "", "", "")
@@ -133,7 +131,7 @@ call Tungsten("Underlined",s:light2, s:dark2, "italic")
 
 call Tungsten("Error",s:light2, s:dark2, "italic")
 
-call Tungsten("Todo", s:red2, s:dark1, "")
+call Tungsten("Todo", s:red1, s:dark1, "")
 
 " }}}
 
