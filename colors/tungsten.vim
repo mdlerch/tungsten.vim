@@ -29,7 +29,7 @@ let s:color11 = 180
 let s:color12   = 60
 " color13 magenta
 " color14 cyan dark black
-let s:color14   = 235
+let s:color14   = 234
 " color15 white medium white
 let s:color15  = 252
 
@@ -77,7 +77,7 @@ call Tungsten("Folded", s:color6, s:color14, "none")
 " call Tungsten("FoldColumn", "none", s:color0, "none")
 " call Tungsten("SignColumn", "none", s:color0, "none")
 call Tungsten("IncSearch", s:color8, s:color3, "none")
-call Tungsten("LineNr", s:color6, s:color14, "none")
+call Tungsten("LineNr", s:color0, s:color14, "none")
 call Tungsten("CursorLineNr", s:color7, s:color8, "none")
 " call Tungsten("ModeMsg", "none", s:color0, "none")
 " call Tungsten("MoreMsg", "none", s:color0, "none")
