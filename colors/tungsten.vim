@@ -17,7 +17,7 @@ let s:color11 = 77  " green
 let s:color12 = 115 " sea green
 let s:color13 = 110 " blue
 let s:color14 = 60  " dark blue
-let s:color15 = 96 " purple
+let s:color15 = 138 " purple
 
 
 set background=dark
@@ -97,7 +97,7 @@ call Tungsten("Constant", s:color8, "", "")
 call Tungsten("String", s:color7, "", "")
 call Tungsten("Character", s:color7, "", "")
 call Tungsten("Number", s:color13, "", "")
-call Tungsten("Boolean", s:color11, "", "")
+call Tungsten("Boolean", s:color13, "", "")
 call Tungsten("Float", s:color13, "", "")
 
 call Tungsten("Identifier", s:color12, "", "none")
