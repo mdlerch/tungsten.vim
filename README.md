@@ -1,9 +1,9 @@
 tungsten.vim, a color scheme for vim
 
 
-<div id="zero" style="background-color:#1c1c1c;height:100px;width:200px;">
+<span style="background-color:#1c1c1c;">
 	color0 dark black
-</div>
+</span>
 <div id="one" style="background-color:#303030;height:100px;width:200px;">
 	color1 medium black
 </div>
