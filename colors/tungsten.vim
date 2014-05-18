@@ -131,7 +131,7 @@ call Tungsten("Debug", s:color4, "", "")
 
 call Tungsten("Underlined",s:color4, s:color1, "italic")
 
-call Tungsten("Error",s:color4, s:color1, "italic")
+call Tungsten("Error",s:color6, "", "")
 
 call Tungsten("Todo", s:color6, s:color2, "")
 
