@@ -108,7 +108,7 @@ call Tungsten("Conditional", s:color9, "", "")
 call Tungsten("Repeat", s:color9, "", "")
 call Tungsten("Label", "", "", "")
 call Tungsten("Operator", s:color8, "", "none")
-call Tungsten("Keyword", "", "", "none")
+call Tungsten("Keyword", s:color9, "", "none")
 call Tungsten("Exception", "", "", "none")
 
 call Tungsten("PreProc", "", "", "")
