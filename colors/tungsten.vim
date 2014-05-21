@@ -11,7 +11,7 @@ let s:color5  = 254 " light white
 let s:color6  = 196 " bright red
 let s:color7  = 131 " brick red
 let s:color8  = 180 " orange
-let s:color9 = 187 " yellow
+let s:color9  = 187 " yellow
 let s:color10 = 118 " neon green
 let s:color11 = 77  " green
 let s:color12 = 115 " sea green
@@ -84,7 +84,7 @@ call Tungsten("SpellCap", s:color15, "", "underline")
 call Tungsten("TabLine", s:color3, s:color0, "none")
 call Tungsten("TabLineFill", s:color3, s:color0, "none")
 call Tungsten("TabLineSel", s:color5, s:color1, "none")
-" call Tungsten("Title", "none", s:color2, "none")
+call Tungsten("Title", s:color12, "none", "none")
 call Tungsten("Visual", "", s:color0, "none")
 " call Tungsten("VisualNOS", "none", s:color2, "none")
 " call Tungsten("WarningMSG", "none", s:color2, "none")
