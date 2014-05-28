@@ -111,7 +111,7 @@ call Tungsten("Operator", s:color8, "", "none")
 call Tungsten("Keyword", s:color9, "", "none")
 call Tungsten("Exception", "", "", "none")
 
-call Tungsten("PreProc", "", "", "")
+call Tungsten("PreProc", s:color9, "", "")
 call Tungsten("Include", "", "", "")
 call Tungsten("Define", "", "", "none")
 call Tungsten("Macro", "", "", "none")
