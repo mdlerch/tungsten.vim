@@ -19,7 +19,7 @@ let s:color13 = 110 " blue
 let s:color14 = 60  " dark blue
 let s:color15 = 138 " purple
 
-
+" {{{ Set up
 set background=dark
 
 highlight clear
@@ -42,7 +42,6 @@ function! Tungsten(group, fg, bg, attr)
 endfunction
 
 " }}}
-
 " {{{1 vim groups
 
 call Tungsten("ColorColumn", "", s:color2, "none")
@@ -94,7 +93,7 @@ call Tungsten("Visual", "", s:color0, "none")
 
 call Tungsten("Comment", s:color14, "", "")
 call Tungsten("Constant", s:color8, "", "")
-call Tungsten("String", s:color7, "", "")
+call Tungsten("String", s:color12, "", "")
 call Tungsten("Character", s:color7, "", "")
 call Tungsten("Number", s:color13, "", "")
 call Tungsten("Boolean", s:color13, "", "")
