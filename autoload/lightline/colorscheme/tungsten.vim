@@ -36,10 +36,10 @@ let s:p.visual.middle = [ [ s:color3, s:color7 ] ]
 let s:p.inactive.right = [ [ s:color3, s:color0 ], [ s:color2, s:color0 ] ]
 let s:p.inactive.left =  [ [ s:color2, s:color0 ], [ s:color2, s:color0 ] ]
 let s:p.inactive.middle = [ [ s:color2, s:color0 ] ]
-let s:p.tabline.left = [ [ s:color4, s:color0 ] ]
-let s:p.tabline.tabsel = [ [ s:color4, s:color0 ] ]
+let s:p.tabline.left = [ [ s:color2, s:color0 ] ]
+let s:p.tabline.tabsel = [ [ s:color4, s:color2 ] ]
 let s:p.tabline.middle = [ [ s:color4, s:color0 ] ]
-let s:p.tabline.right = copy(s:p.normal.right)
+let s:p.tabline.right = [ [ s:color2, s:color0 ] ]
 let s:p.normal.error = [ [ s:color7, s:color0 ] ]
 let s:p.normal.warning = [ [ s:color7, s:color0 ] ]
 
