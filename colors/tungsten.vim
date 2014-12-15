@@ -59,9 +59,10 @@ function! TungstenC(group, fg, bg, attr)
 endfunction
 
 function! TungstenG(group, fg, bg, attr)
-    if has("gui")
-        exec "hi clear " . a:group
+    if !has("gui")
+        return
     endif
+    exec "hi clear " . a:group
 	if a:fg != ""
 		exec "hi " . a:group . " guifg=" . a:fg
 	endif
