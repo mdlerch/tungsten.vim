@@ -1,5 +1,12 @@
-" my vim color theme: tungsten
-"
+" tungsten.vim a colorscheme for vim
+" Maintainer: Michael Lerch (github.com/mdlerch)
+" Version: 1.0
+
+" A darkish color scheme for 256 and gui vim.
+" Goals: easy on the eyes,
+"        non-distracting,
+"        completeness of highlight groups,
+"        very obvious diffs
 
 " theme colors
 let s:color0C  = 234 " dark black
