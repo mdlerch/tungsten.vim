@@ -6,7 +6,9 @@
 " Goals: easy on the eyes,
 "        non-distracting,
 "        completeness of highlight groups,
-"        very obvious diffs
+"        very obvious diffs,
+"        consistency between gui and 256 term,
+"        no need to set term colors
 
 " theme colors
 let s:color0C  = 234 " dark black
@@ -38,7 +40,7 @@ let s:color8G  = "#d7af87" " orange
 let s:color9G  = "#d7d7af" " yellow
 let s:color10G = "#87ff00" " neon green
 let s:color11G = "#5fd75f"  " green
-let s:color12G = "#87d787" " sea green
+let s:color12G = "#87d7af" " sea green
 let s:color13G = "#87afd7" " blue
 let s:color14G = "#5f5f87"  " dark blue
 let s:color15G = "#af8787" " purple
@@ -89,7 +91,7 @@ call TungstenG("ColorColumn", "", s:color2G, "none")
 call TungstenC("Conceal", s:color3C, s:color1C, "none")
 call TungstenG("Conceal", s:color3G, s:color1G, "none")
 call TungstenC("Cursor", "", "", "")
-call TungstenG("Cursor", "", "", "")
+call TungstenG("Cursor", "", s:color5G, "")
 " call Tungsten ("CursorIM", "none", s:color2C, "none")
 " call TungstenG("CursorIM", "none", s:color2G, "none")
 " call TungstenG("CursorIM", "none", s:color2G, "none")
