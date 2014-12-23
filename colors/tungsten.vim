@@ -81,9 +81,9 @@ function! TungstenG(group, fg, bg, attr)
 endfunction
 
 " }}}
-" {{{1 vim groups
 
 if has("gui_running")
+    " {{{ Vim groups
     call TungstenG("ColorColumn", "", s:color2G, "NONE")
     call TungstenG("Conceal", s:color3G, s:color1G, "NONE")
     call TungstenG("Cursor", "", s:color5G, "")
@@ -130,9 +130,52 @@ if has("gui_running")
     " call TungstenG("VisualNOS", "NONE", s:color2G, "NONE")
     " call TungstenG("WarningMSG", "NONE", s:color2G, "NONE")
     " call TungstenG("WildMenu", "NONE", s:color2G, "NONE")
+    " }}} Vim groups
+    " {{{ Highlight groups
+    call TungstenG("Comment", s:color14G, "", "")
+    call TungstenG("Constant", s:color8G, "", "")
+    call TungstenG("String", s:color12G, "", "")
+    call TungstenG("Character", s:color7G, "", "")
+    call TungstenG("Number", s:color13G, "", "")
+    call TungstenG("Boolean", s:color13G, "", "")
+    call TungstenG("Float", s:color13G, "", "")
+    call TungstenG("Identifier", s:color12G, "", "NONE")
+    call TungstenG("Function", s:color7G, "", "NONE")
+    call TungstenG("Statement", s:color8G, "", "")
+    call TungstenG("Conditional", s:color9G, "", "")
+    call TungstenG("Repeat", s:color9G, "", "")
+    call TungstenG("Label", "", "", "")
+    call TungstenG("Operator", s:color8G, "", "NONE")
+    call TungstenG("Keyword", s:color9G, "", "NONE")
+    call TungstenG("Exception", "", "", "NONE")
+    call TungstenG("PreProc", s:color9G, "", "")
+    call TungstenG("Include", "", "", "")
+    call TungstenG("Define", "", "", "NONE")
+    call TungstenG("Macro", "", "", "NONE")
+    call TungstenG("PreCondit", s:color7G, "", "NONE")
+    call TungstenG("Type", s:color12G, "", "NONE")
+    call TungstenG("StorageClass", s:color13G, "", "NONE")
+    call TungstenG("Structure", "", "", "")
+    call TungstenG("Typedef", "", "", "")
+    call TungstenG("Special", s:color7G, "", "")
+    call TungstenG("SpecialChar", s:color4G, "", "")
+    call TungstenG("Tag", "", "", "")
+    call TungstenG("Delimiter", s:color3G, "", "")
+    call TungstenG("SpecialComment", s:color4G, "", "")
+    call TungstenG("Debug", s:color4G, "", "")
+    call TungstenG("Underlined",s:color4G, s:color1G, "underline")
+    call TungstenG("Error",s:color6G, "", "")
+    call TungstenG("Todo", s:color6G, s:color2G, "")
+    " }}} Highlight groups
+    " {{{ misc
+    " TagHighlight
+    call TungstenG("LocalVariable", "", "", "NONE")
+    call TungstenG("Member", "", "", "NONE")
+    " }}}
 endif
 
-if &t_Co == 256
+if &t_Co==256
+    " {{{ Vim groups
     call TungstenC("ColorColumn", "", s:color2C, "NONE")
     call TungstenC("Conceal", s:color3C, s:color1C, "NONE")
     call TungstenC("Cursor", "", "", "")
@@ -178,49 +221,8 @@ if &t_Co == 256
     " call TungstenC("VisualNOS", "NONE", s:color2C, "NONE")
     " call TungstenC("WarningMSG", "NONE", s:color2C, "NONE")
     " call TungstenC("WildMenu", "NONE", s:color2C, "NONE")
-endif
-
-" }}}
-" {{{ highlight groups
-
-if has("gui_running")
-    call TungstenG("Comment", s:color14G, "", "")
-    call TungstenG("Constant", s:color8G, "", "")
-    call TungstenG("String", s:color12G, "", "")
-    call TungstenG("Character", s:color7G, "", "")
-    call TungstenG("Number", s:color13G, "", "")
-    call TungstenG("Boolean", s:color13G, "", "")
-    call TungstenG("Float", s:color13G, "", "")
-    call TungstenG("Identifier", s:color12G, "", "NONE")
-    call TungstenG("Function", s:color7G, "", "NONE")
-    call TungstenG("Statement", s:color8G, "", "")
-    call TungstenG("Conditional", s:color9G, "", "")
-    call TungstenG("Repeat", s:color9G, "", "")
-    call TungstenG("Label", "", "", "")
-    call TungstenG("Operator", s:color8G, "", "NONE")
-    call TungstenG("Keyword", s:color9G, "", "NONE")
-    call TungstenG("Exception", "", "", "NONE")
-    call TungstenG("PreProc", s:color9G, "", "")
-    call TungstenG("Include", "", "", "")
-    call TungstenG("Define", "", "", "NONE")
-    call TungstenG("Macro", "", "", "NONE")
-    call TungstenG("PreCondit", s:color7G, "", "NONE")
-    call TungstenG("Type", s:color12G, "", "NONE")
-    call TungstenG("StorageClass", s:color13G, "", "NONE")
-    call TungstenG("Structure", "", "", "")
-    call TungstenG("Typedef", "", "", "")
-    call TungstenG("Special", s:color7G, "", "")
-    call TungstenG("SpecialChar", s:color4G, "", "")
-    call TungstenG("Tag", "", "", "")
-    call TungstenG("Delimiter", s:color3G, "", "")
-    call TungstenG("SpecialComment", s:color4G, "", "")
-    call TungstenG("Debug", s:color4G, "", "")
-    call TungstenG("Underlined",s:color4G, s:color1G, "underline")
-    call TungstenG("Error",s:color6G, "", "")
-    call TungstenG("Todo", s:color6G, s:color2G, "")
-endif
-
-if &t_Co==256
+    " }}} Vim groups
+    " {{{ Highlight groups
     call TungstenC("Comment", s:color14C, "", "")
     call TungstenC("Constant", s:color8C, "", "")
     call TungstenC("String", s:color12C, "", "")
@@ -228,10 +230,8 @@ if &t_Co==256
     call TungstenC("Number", s:color13C, "", "")
     call TungstenC("Boolean", s:color13C, "", "")
     call TungstenC("Float", s:color13C, "", "")
-
     call TungstenC("Identifier", s:color12C, "", "NONE")
     call TungstenC("Function", s:color7C, "", "NONE")
-
     call TungstenC("Statement", s:color8C, "", "")
     call TungstenC("Conditional", s:color9C, "", "")
     call TungstenC("Repeat", s:color9C, "", "")
@@ -239,32 +239,30 @@ if &t_Co==256
     call TungstenC("Operator", s:color8C, "", "NONE")
     call TungstenC("Keyword", s:color9C, "", "NONE")
     call TungstenC("Exception", "", "", "NONE")
-
     call TungstenC("PreProc", s:color9C, "", "")
     call TungstenC("Include", "", "", "")
     call TungstenC("Define", "", "", "NONE")
     call TungstenC("Macro", "", "", "NONE")
     call TungstenC("PreCondit", s:color7C, "", "NONE")
-
     call TungstenC("Type", s:color12C, "", "NONE")
     call TungstenC("StorageClass", s:color13C, "", "NONE")
     call TungstenC("Structure", "", "", "")
     call TungstenC("Typedef", "", "", "")
-
     call TungstenC("Special", s:color7C, "", "")
     call TungstenC("SpecialChar", s:color4C, "", "")
     call TungstenC("Tag", "", "", "")
     call TungstenC("Delimiter", s:color3C, "", "")
     call TungstenC("SpecialComment", s:color4C, "", "")
     call TungstenC("Debug", s:color4C, "", "")
-
     call TungstenC("Underlined",s:color4C, s:color1C, "italic")
-
     call TungstenC("Error",s:color6C, "", "")
-
     call TungstenC("Todo", s:color6C, s:color2C, "")
+    " }}} Highlight groups
+    " {{{ Misc
+    " TagHighlight
+    call TungstenC("LocalVariable", "", "", "NONE")
+    call TungstenC("Member", "", "", "NONE")
+    " }}}
 endif
-
-" }}}
 
 " vim: set fdm=marker:fdl=1
