@@ -266,8 +266,8 @@ if &t_Co==256
     " }}} Highlight groups
     " {{{ Misc
     " TagHighlight
-    call TungstenC("LocalVariable", "", "", "NONE")
-    call TungstenC("Member", "", "", "NONE")
+    call TungstenC("CTagsLocalVariable", "", "", "NONE")
+    call TungstenC("CTagsMember", "", "", "NONE")
     " mail
     call TungstenC("mailQuoted1", s:color1C, "", "NONE")
     call TungstenC("mailQuoted2", s:color13C, "", "NONE")
