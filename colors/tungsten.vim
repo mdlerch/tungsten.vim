@@ -25,7 +25,7 @@ let s:color10C = 118 " green 2 (bright)
 let s:color11C = 180 " yellow 2 (orange)
 let s:color12C = 110 " blue 2 (light)
 let s:color13C = 138 " magenta 2 (magenta)
-let s:color14C = 73  " cyan 2 (cyan)
+let s:color14C = 123 " cyan 2 (cyan)
 let s:color15C = 246 " white 2 (dark)
 
 let s:color0G  = "#1c1c1c" " black 1 (dark)
