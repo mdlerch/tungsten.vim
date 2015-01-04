@@ -93,7 +93,7 @@ if has("gui_running")
     call TungstenG("CursorLine", "", s:color8G, "NONE")
     " call TungstenG("Directory", "NONE", s:color8G, "NONE")
     call TungstenG("DiffAdd", s:color10G, s:color5G, "NONE")
-    call TungstenG("DiffChange", s:color2G, s:color8G, "NONE")
+    call TungstenG("DiffChange", s:color2G, s:color5G, "NONE")
     call TungstenG("DiffDelete", s:color9G, s:color5G, "NONE")
     call TungstenG("DiffText", s:color9G, s:color5G, "NONE")
     call TungstenG("ErrorMsg", "NONE", s:color8G, "NONE")
@@ -115,6 +115,7 @@ if has("gui_running")
     call TungstenG("PmenuThumb", "", s:color8G, "NONE")
     call TungstenG("Question", s:color6G, s:color8G, "NONE")
     call TungstenG("Search", s:color5G, s:color13G, "NONE")
+    call TungstenG("SignColumn", s:color9G, s:color0G, "NONE")
     call TungstenG("SpecialKey", s:color8G, s:color5G, "NONE")
     call TungstenG("SpellBad", s:color13G, "", "undercurl")
     call TungstenG("SpellCap", s:color13G, "", "undercurl")
@@ -180,6 +181,9 @@ if has("gui_running")
     call TungstenG("mailQuoted6", s:color2G, "", "NONE")
     " vim
     call TungstenG("vimOption", s:color3G, "", "NONE")
+    " ycm
+    call TungstenG("YcmErrorSign", s:color9G, s:color0G, "NONE")
+    call TungstenG("YcmWarningSign", s:color1G, s:color0G, "NONE")
     " }}}
 endif
 
@@ -193,7 +197,7 @@ if &t_Co==256
     call TungstenC("CursorLine", "", s:color8C, "NONE")
     " call TungstenC("Directory", "NONE", s:color8C, "NONE")
     call TungstenC("DiffAdd", s:color10C, s:color5C, "NONE")
-    call TungstenC("DiffChange", s:color2C, s:color8C, "NONE")
+    call TungstenC("DiffChange", s:color14C, s:color5C, "NONE")
     call TungstenC("DiffDelete", s:color9C, s:color5C, "NONE")
     call TungstenC("DiffText", s:color9C, s:color5C, "NONE")
     call TungstenC("ErrorMsg", "NONE", s:color8C, "NONE")
@@ -215,6 +219,7 @@ if &t_Co==256
     call TungstenC("PmenuThumb", "", s:color8C, "NONE")
     call TungstenC("Question", s:color6C, s:color8C, "NONE")
     call TungstenC("Search", s:color5C, s:color13C, "NONE")
+    call TungstenC("SignColumn", s:color9C, s:color0C, "NONE")
     call TungstenC("SpecialKey", s:color8C, s:color5C, "NONE")
     call TungstenC("SpellBad", s:color13C, "", "underline")
     call TungstenC("SpellCap", s:color13C, "", "underline")
@@ -280,6 +285,9 @@ if &t_Co==256
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
     " vim
     call TungstenC("vimOption", s:color3C, "", "NONE")
+    " ycm
+    call TungstenC("YcmErrorSign", s:color9C, s:color0C, "NONE")
+    call TungstenC("YcmWarningSign", s:color1C, s:color0C, "NONE")
     " }}}
 endif
 
