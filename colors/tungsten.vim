@@ -48,7 +48,9 @@ let s:color15G = "#949494" " white 2 (dark)
 " {{{ Set up
 set background=dark
 
-highlight clear
+" highlight clear removes user colors which is annoying if you use them, for
+" example, for your status bar.
+" highlight clear
 if exists("syntax_on")
     syntax reset
 endif
@@ -96,7 +98,7 @@ if has("gui_running")
     call TungstenG("DiffChange", s:color2G, s:color5G, "NONE")
     call TungstenG("DiffDelete", s:color9G, s:color5G, "NONE")
     call TungstenG("DiffText", s:color9G, s:color5G, "NONE")
-    call TungstenG("ErrorMsg", "NONE", s:color8G, "NONE")
+    call TungstenG("ErrorMsg", s:color1G, s:color0G, "NONE")
     call TungstenG("VertSplit", s:color4G, s:color8G, "NONE")
     call TungstenG("Folded", s:color15G, s:color0G, "NONE")
     " call TungstenG("FoldColumn", "NONE", s:color8G, "NONE")
@@ -104,7 +106,7 @@ if has("gui_running")
     call TungstenG("IncSearch", s:color5G, s:color3G, "NONE")
     call TungstenG("LineNr", s:color8G, s:color0G, "NONE")
     call TungstenG("CursorLineNr", s:color7G, s:color5G, "NONE")
-    call TungstenG("MatchParen", "", s:color0G, "reverse")
+    call TungstenG("MatchParen", "", s:color8G, "reverse")
     " call TungstenG("ModeMsg", "NONE", s:color8G, "NONE")
     " call TungstenG("MoreMsg", "NONE", s:color8G, "NONE")
     call TungstenG("NonText", s:color8G, s:color5G, "NONE")
@@ -129,7 +131,7 @@ if has("gui_running")
     call TungstenG("Title", s:color2G, "NONE", "NONE")
     call TungstenG("Visual", "", s:color0G, "NONE")
     " call TungstenG("VisualNOS", "NONE", s:color8G, "NONE")
-    " call TungstenG("WarningMSG", "NONE", s:color8G, "NONE")
+    call TungstenG("WarningMSG", s:color1G, s:color0G, "NONE")
     " call TungstenG("WildMenu", "NONE", s:color8G, "NONE")
     " }}} Vim groups
     " {{{ Highlight groups
@@ -200,7 +202,7 @@ if &t_Co==256
     call TungstenC("DiffChange", s:color14C, s:color5C, "NONE")
     call TungstenC("DiffDelete", s:color9C, s:color5C, "NONE")
     call TungstenC("DiffText", s:color9C, s:color5C, "NONE")
-    call TungstenC("ErrorMsg", "NONE", s:color8C, "NONE")
+    call TungstenC("ErrorMsg", s:color1C, s:color0C, "NONE")
     call TungstenC("VertSplit", s:color4C, s:color8C, "NONE")
     call TungstenC("Folded", s:color15C, s:color0C, "NONE")
     " call TungstenC("FoldColumn", "NONE", s:color8C, "NONE")
@@ -208,7 +210,7 @@ if &t_Co==256
     call TungstenC("IncSearch", s:color5C, s:color3C, "NONE")
     call TungstenC("LineNr", s:color8C, s:color0C, "NONE")
     call TungstenC("CursorLineNr", s:color7C, s:color5C, "NONE")
-    call TungstenC("MatchParen", "", s:color0C, "reverse")
+    call TungstenC("MatchParen", "", s:color8C, "reverse")
     " call TungstenC("ModeMsg", "NONE", s:color8C, "NONE")
     " call TungstenC("MoreMsg", "NONE", s:color8C, "NONE")
     call TungstenC("NonText", s:color8C, s:color5C, "NONE")
@@ -233,7 +235,7 @@ if &t_Co==256
     call TungstenC("Title", s:color2C, "NONE", "NONE")
     call TungstenC("Visual", "", s:color0C, "NONE")
     " call TungstenC("VisualNOS", "NONE", s:color8C, "NONE")
-    " call TungstenC("WarningMSG", "NONE", s:color8C, "NONE")
+    call TungstenC("WarningMSG", s:color1C, s:color8C, "NONE")
     " call TungstenC("WildMenu", "NONE", s:color8C, "NONE")
     " }}} Vim groups
     " {{{ Highlight groups
