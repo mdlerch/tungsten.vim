@@ -1,0 +1,85 @@
+# gnuplot script to make pictures
+
+
+# This first plot is not really necessary with tungsten-tones.png
+
+# reset; clear;
+# set terminal png
+# set output "tungsten.png"
+
+# set object 17 rectangle from screen 0,0 to screen 1,1 fc rgb "#303030" behind
+
+# set object 1 rectangle from -.5,-.5 to .5,.5 fc rgbcolor "#d0d0d0"
+# set object 2 rectangle from -2,-.5 to -1,.5 fc rgbcolor "#af8787"
+# set object 3 rectangle from -1.75,.75 to -.75,1.75 fc rgbcolor "#d7af87"
+# set object 4 rectangle from -.5,1 to .5,2 fc rgbcolor "#d7d7af"
+# set object 5 rectangle from 1.75,.75 to .75,1.75 fc rgbcolor "#87d7af"
+# set object 6 rectangle from 2,-.5 to 1,.5 fc rgbcolor "#87ffff"
+# set object 7 rectangle from 1.75,-.75 to .75,-1.75 fc rgbcolor "#87afd7"
+# set object 8 rectangle from -.5,-1 to .5,-2 fc rgbcolor "#5f5f87"
+# set object 9 rectangle from -1.75,-.75 to -.75,-1.75 fc rgbcolor "#af5f5f"
+
+# unset border
+# unset xtics
+# unset ytics
+# unset key
+
+# set xrange [-3:3]
+# set yrange [-3:3]
+# set size square
+
+# plot 10,10 notitle
+
+reset; clear
+set terminal png;
+set output "tungsten-diff.png"
+
+set object 17 rectangle from screen 0,0 to screen 1,1 fc rgb "#303030" behind
+
+set object 1 rectangle from -2.5,-2 to -.25,2 fc rgbcolor "#ff0000"
+set object 2 rectangle from 2.5,-2 to .25,2 fc rgbcolor "#87ff00"
+set object 3 rectangle from -2,-.5 to 2,.5 fc rgbcolor "#87ffff"
+
+unset border
+unset xtics
+unset ytics
+unset key
+
+set xrange [-3:3]
+set yrange [-3:3]
+
+plot 10,10 notitle
+
+reset; clear
+set terminal png;
+set output "tungsten-tones.png"
+
+set object 20 rectangle from screen 0,0 to screen 1,1 fc rgb "#303030" behind
+
+set object 1 rectangle from screen 0,0 to screen 0.2,1 fc rgb "#1c1c1c"
+set object 2 rectangle from screen 0,.7 to screen 1,.8 fc rgb "#444444"
+set object 3 rectangle from screen 0,.7 to screen .2,.8 fc rgb "#303030"
+
+set object 5 rectangle from -.5,-.5 to .5,.5 fc rgbcolor "#d0d0d0"
+set object 6 rectangle from -2,-.5 to -1,.5 fc rgbcolor "#af8787"
+set object 7 rectangle from -1.75,.75 to -.75,1.75 fc rgbcolor "#d7af87"
+set object 8 rectangle from -.5,1 to .5,2 fc rgbcolor "#d7d7af"
+set object 9 rectangle from 1.75,.75 to .75,1.75 fc rgbcolor "#87d7af"
+set object 10 rectangle from 2,-.5 to 1,.5 fc rgbcolor "#87ffff"
+set object 11 rectangle from 1.75,-.75 to .75,-1.75 fc rgbcolor "#87afd7"
+set object 12 rectangle from -.5,-1 to .5,-2 fc rgbcolor "#5f5f87"
+set object 13 rectangle from -1.75,-.75 to -.75,-1.75 fc rgbcolor "#af5f5f"
+
+set object 15 rectangle from screen .3,.85 to screen .4,.95 fc rgbcolor "#949494"
+set object 16 rectangle from screen .55,.85 to screen .65,.95 fc rgbcolor "#d0d0d0"
+set object 17 rectangle from screen .8,.85 to screen .9,.95 fc rgbcolor "#e4e4e4"
+
+unset border
+unset xtics
+unset ytics
+unset key
+
+set xrange [-4.8:3]
+set yrange [-3:4.8]
+
+plot 10,10 notitle
