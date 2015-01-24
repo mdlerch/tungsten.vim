@@ -98,7 +98,7 @@ if has("gui_running")
     call TungstenG("DiffChange", s:color2G, s:color5G, "NONE")
     call TungstenG("DiffDelete", s:color9G, s:color5G, "NONE")
     call TungstenG("DiffText", s:color9G, s:color5G, "NONE")
-    call TungstenG("ErrorMsg", s:color9G, s:color0G, "NONE")
+    call TungstenG("ErrorMsg", s:color1G, s:color0G, "NONE")
     call TungstenG("VertSplit", s:color4G, s:color8G, "NONE")
     call TungstenG("Folded", s:color15G, s:color0G, "NONE")
     " call TungstenG("FoldColumn", "NONE", s:color8G, "NONE")
@@ -131,7 +131,7 @@ if has("gui_running")
     call TungstenG("Title", s:color2G, "NONE", "NONE")
     call TungstenG("Visual", "", s:color0G, "NONE")
     " call TungstenG("VisualNOS", "NONE", s:color8G, "NONE")
-    call TungstenG("WarningMSG", s:color9G, s:color0G, "NONE")
+    call TungstenG("WarningMSG", s:color4G, s:color0G, "NONE")
     " call TungstenG("WildMenu", "NONE", s:color8G, "NONE")
     " }}} Vim groups
     " {{{ Highlight groups
@@ -183,6 +183,7 @@ if has("gui_running")
     call TungstenG("mailQuoted6", s:color2G, "", "NONE")
     " vim
     call TungstenG("vimOption", s:color3G, "", "NONE")
+    call TungstenG("qfLineNr", s:color1G, s:color5G, "NONE")
     " ycm
     call TungstenG("YcmErrorSign", s:color9G, s:color0G, "NONE")
     call TungstenG("YcmWarningSign", s:color9G, s:color0G, "NONE")
@@ -204,7 +205,7 @@ if &t_Co==256
     call TungstenC("DiffChange", s:color14C, s:color5C, "NONE")
     call TungstenC("DiffDelete", s:color9C, s:color5C, "NONE")
     call TungstenC("DiffText", s:color9C, s:color5C, "NONE")
-    call TungstenC("ErrorMsg", s:color9C, s:color0C, "NONE")
+    call TungstenC("ErrorMsg", s:color1C, s:color0C, "NONE")
     call TungstenC("VertSplit", s:color4C, s:color8C, "NONE")
     call TungstenC("Folded", s:color15C, s:color0C, "NONE")
     " call TungstenC("FoldColumn", "NONE", s:color8C, "NONE")
@@ -237,7 +238,7 @@ if &t_Co==256
     call TungstenC("Title", s:color2C, "NONE", "NONE")
     call TungstenC("Visual", "", s:color0C, "NONE")
     " call TungstenC("VisualNOS", "NONE", s:color8C, "NONE")
-    call TungstenC("WarningMSG", s:color9C, s:color8C, "NONE")
+    call TungstenC("WarningMSG", s:color4C, s:color0C, "NONE")
     " call TungstenC("WildMenu", "NONE", s:color8C, "NONE")
     " }}} Vim groups
     " {{{ Highlight groups
@@ -289,9 +290,10 @@ if &t_Co==256
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
     " vim
     call TungstenC("vimOption", s:color3C, "", "NONE")
+    call TungstenC("qfLineNr", s:color1C, s:color5C, "NONE")
     " ycm
-    call TungstenC("YcmErrorSign", s:color9C, s:color0C, "NONE")
-    call TungstenC("YcmWarningSign", s:color9C, s:color0C, "NONE")
+    call TungstenC("YcmErrorSign", s:color1C, s:color0C, "NONE")
+    call TungstenC("YcmWarningSign", s:color1C, s:color0C, "NONE")
     call TungstenC("YcmErrorSection", s:color1C, "", "NONE")
     call TungstenC("YcmWarningSection", s:color1C, "", "NONE")
     " }}}
