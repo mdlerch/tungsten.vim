@@ -181,6 +181,10 @@ if has("gui_running")
     call TungstenG("mailQuoted4", s:color4G, "", "NONE")
     call TungstenG("mailQuoted5", s:color12G, "", "NONE")
     call TungstenG("mailQuoted6", s:color2G, "", "NONE")
+    " status
+    call TungstenG("status1", s:color12G, s:color0G, "NONE")
+    call TungstenG("status2", s:color11G, s:color8G, "NONE")
+    call TungstenG("status3", s:color9G, s:color0G, "NONE")
     " vim
     call TungstenG("vimOption", s:color3G, "", "NONE")
     call TungstenG("qfLineNr", s:color1G, s:color5G, "NONE")
@@ -288,6 +292,10 @@ if &t_Co==256
     call TungstenC("mailQuoted4", s:color4C, "", "NONE")
     call TungstenC("mailQuoted5", s:color12C, "", "NONE")
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
+    " status
+    call TungstenC("status1", s:color12C, s:color0C, "NONE")
+    call TungstenC("status2", s:color11C, s:color8C, "NONE")
+    call TungstenC("status3", s:color9C, s:color0C, "NONE")
     " vim
     call TungstenC("vimOption", s:color3C, "", "NONE")
     call TungstenC("qfLineNr", s:color1C, s:color5C, "NONE")
