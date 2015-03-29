@@ -267,7 +267,7 @@ if &t_Co==256
     call TungstenC("Define", s:color14C, "", "NONE")
     call TungstenC("Macro", s:color14C, "", "NONE")
     call TungstenC("PreCondit", s:color1C, "", "NONE")
-    call TungstenC("Type", s:color15C, "", "NONE")
+    call TungstenC("Type", s:color11C, "", "NONE")
     call TungstenC("StorageClass", s:color12C, "", "NONE")
     call TungstenC("Structure", "", "", "")
     call TungstenC("Typedef", "", "", "")
