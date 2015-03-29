@@ -101,7 +101,7 @@ if has("gui_running")
     call TungstenG("ErrorMsg", s:color1G, s:color0G, "NONE")
     call TungstenG("VertSplit", s:color4G, s:color8G, "NONE")
     call TungstenG("Folded", s:color15G, s:color0G, "NONE")
-    " call TungstenG("FoldColumn", "NONE", s:color8G, "NONE")
+    call TungstenG("FoldColumn", s:color2G, s:color0G, "NONE")
     " call TungstenG("SignColumn", "NONE", s:color8G, "NONE")
     call TungstenG("IncSearch", s:color5G, s:color3G, "NONE")
     call TungstenG("LineNr", s:color8G, s:color0G, "NONE")
@@ -212,7 +212,7 @@ if &t_Co==256
     call TungstenC("ErrorMsg", s:color1C, s:color0C, "NONE")
     call TungstenC("VertSplit", s:color4C, s:color8C, "NONE")
     call TungstenC("Folded", s:color15C, s:color0C, "NONE")
-    " call TungstenC("FoldColumn", "NONE", s:color8C, "NONE")
+    call TungstenC("FoldColumn", s:color2C, s:color0C, "NONE")
     " call TungstenC("SignColumn", "NONE", s:color8C, "NONE")
     call TungstenC("IncSearch", s:color5C, s:color3C, "NONE")
     call TungstenC("LineNr", s:color8C, s:color0C, "NONE")
@@ -292,6 +292,12 @@ if &t_Co==256
     call TungstenC("mailQuoted4", s:color4C, "", "NONE")
     call TungstenC("mailQuoted5", s:color12C, "", "NONE")
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
+    " senak
+    call TungstenC("SneakPluginTarget", s:color2C, s:color0C, "NONE")
+    " call TungstenC("SneakPluginScope", s:color
+    call TungstenC("SneakStreakTarget", s:color9C, s:color0C, "NONE")
+    call TungstenC("SneakStreakMask", s:color12C, s:color0C, "NONE")
+    " call TungstenC("SneakStreakStatusLine", s:color
     " status
     call TungstenC("status1", s:color12C, s:color0C, "NONE")
     call TungstenC("status2", s:color11C, s:color8C, "NONE")
