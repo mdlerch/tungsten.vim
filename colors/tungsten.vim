@@ -181,6 +181,8 @@ if has("gui_running")
     call TungstenG("mailQuoted4", s:color4G, "", "NONE")
     call TungstenG("mailQuoted5", s:color12G, "", "NONE")
     call TungstenG("mailQuoted6", s:color2G, "", "NONE")
+    " Nvim-R / Vim-R-plugin
+    call TungstenG("routInput", s:color6G, "", "NONE")
     " status
     call TungstenG("status1", s:color12G, s:color0G, "NONE")
     call TungstenG("status2", s:color11G, s:color8G, "NONE")
@@ -292,12 +294,8 @@ if &t_Co==256
     call TungstenC("mailQuoted4", s:color4C, "", "NONE")
     call TungstenC("mailQuoted5", s:color12C, "", "NONE")
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
-    " senak
-    call TungstenC("SneakPluginTarget", s:color2C, s:color0C, "NONE")
-    " call TungstenC("SneakPluginScope", s:color
-    call TungstenC("SneakStreakTarget", s:color9C, s:color0C, "NONE")
-    call TungstenC("SneakStreakMask", s:color12C, s:color0C, "NONE")
-    " call TungstenC("SneakStreakStatusLine", s:color
+    " Nvim-R / Vim-R-plugin
+    call TungstenC("routInput", s:color6C, "", "NONE")
     " status
     call TungstenC("status1", s:color12C, s:color0C, "NONE")
     call TungstenC("status2", s:color11C, s:color8C, "NONE")
