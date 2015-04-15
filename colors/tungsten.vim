@@ -182,7 +182,7 @@ if has("gui_running")
     call TungstenG("mailQuoted5", s:color12G, "", "NONE")
     call TungstenG("mailQuoted6", s:color2G, "", "NONE")
     " Nvim-R / Vim-R-plugin
-    call TungstenG("routInput", s:color6G, "", "NONE")
+    call TungstenG("routInput", s:color3G, "", "NONE")
     " status
     call TungstenG("status1", s:color12G, s:color0G, "NONE")
     call TungstenG("status2", s:color11G, s:color8G, "NONE")
@@ -295,7 +295,7 @@ if &t_Co==256
     call TungstenC("mailQuoted5", s:color12C, "", "NONE")
     call TungstenC("mailQuoted6", s:color2C, "", "NONE")
     " Nvim-R / Vim-R-plugin
-    call TungstenC("routInput", s:color6C, "", "NONE")
+    call TungstenC("routInput", s:color3C, "", "NONE")
     " status
     call TungstenC("status1", s:color12C, s:color0C, "NONE")
     call TungstenC("status2", s:color11C, s:color8C, "NONE")
