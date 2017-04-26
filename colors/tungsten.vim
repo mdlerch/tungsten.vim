@@ -195,11 +195,14 @@ call s:Tungsten("status3" , 9  , 0 , "NONE" , "NONE")
 " vim
 call s:Tungsten("vimOption" , 3 , "" , "NONE" , "NONE")
 call s:Tungsten("qfLineNr"  , 1 , 5  , "NONE" , "NONE")
+" yaml
+call s:Tungsten("yamlKey"           , 11 , ""  , "NONE" , "NONE")
 " ycm
 call s:Tungsten("YcmErrorSign"      , 1 , 0  , "NONE" , "NONE")
 call s:Tungsten("YcmWarningSign"    , 1 , 0  , "NONE" , "NONE")
 call s:Tungsten("YcmErrorSection"   , 1 , "" , "NONE" , "NONE")
 call s:Tungsten("YcmWarningSection" , 1 , "" , "NONE" , "NONE")
+
 
 " }}}
 
