@@ -64,12 +64,12 @@ let g:colors_name = "tungsten"
 function! s:Tungsten(group, fg, bg, cterm, gui)
     exec "hi clear " . a:group
     if a:fg =~ '\d'
-        exec "hi " . a:group . " ctermfg=" . expand(s:themecol[a:fg][0]) . "guifg=" . expand(s:themecol[a:fg][1])
+        exec "hi " . a:group . " ctermfg=" . s:themecol[a:fg][0] . " guifg=" . s:themecol[a:fg][1]
     elseif a:fg == "NONE"
         exec "hi " . a:group . " ctermfg=NONE" . " guifg=NONE"
     endif
     if a:bg =~ '\d'
-        exec "hi " . a:group . " ctermbg=" . expand(s:themecol[a:bg][0])
+        exec "hi " . a:group . " ctermbg=" . s:themecol[a:bg][0] . " guibg=" . s:themecol[a:bg][1]
     elseif a:bg == "NONE"
         exec "hi " . a:group . " ctermbg=NONE" . " guibg=NONE"
     endif
