@@ -243,12 +243,12 @@ call s:Tungsten("@tag.delimiter"         , 15 , "" , "NONE" , "NONE") " < > / �
 " Markdown / Markup
 call s:Tungsten("@markup.heading"          , 7  , "" , "NONE"      , "NONE")      " headings → near white (Title-like)
 call s:Tungsten("@markup.heading.1"        , 7  , "" , "bold"      , "bold")      " H1 → near white bold
-call s:Tungsten("@markup.heading.2"        , 6  , "" , "NONE"      , "NONE")      " H2 → light grey
-call s:Tungsten("@markup.heading.3"        , 15 , "" , "NONE"      , "NONE")      " H3 → mid grey
-call s:Tungsten("@markup.heading.4"        , 15 , "" , "NONE"      , "NONE")      " H4 → mid grey
-call s:Tungsten("@markup.heading.5"        , 8  , "" , "NONE"      , "NONE")      " H5 → dark grey
-call s:Tungsten("@markup.heading.6"        , 8  , "" , "NONE"      , "NONE")      " H6 → dark grey
-call s:Tungsten("@markup.raw"              , 2  , "" , "NONE"      , "NONE")      " inline code → sea green (like String)
+call s:Tungsten("@markup.heading.2"        , 7  , "" , "bold"      , "bold")      " H2 → light grey
+call s:Tungsten("@markup.heading.3"        , 15 , "" , "bold"      , "bold")      " H3 → mid grey
+call s:Tungsten("@markup.heading.4"        , 15 , "" , "bold"      , "bold")      " H4 → mid grey
+call s:Tungsten("@markup.heading.5"        , 8  , "" , "bold"      , "bold")      " H5 → dark grey
+call s:Tungsten("@markup.heading.6"        , 8  , "" , "bold"      , "bold")      " H6 → dark grey
+call s:Tungsten("@markup.raw"              , 2  , "" , "bold"      , "bold")      " inline code → sea green (like String)
 call s:Tungsten("@markup.raw.block"        , 2  , "" , "NONE"      , "NONE")      " code blocks → sea green
 call s:Tungsten("@markup.quote"            , 12  , "" , "NONE"      , "NONE")      " > blockquotes → steel blue (Comment-like)
 call s:Tungsten("@markup.math"             , 14 , "" , "NONE"      , "NONE")      " math → cyan
