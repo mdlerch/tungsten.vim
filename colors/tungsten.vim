@@ -1,6 +1,6 @@
 " tungsten.vim a colorscheme for vim
 " Maintainer: Michael Lerch (github.com/mdlerch)
-" Version: 1.1
+" Version: 1.2
 
 " A darkish color scheme for 256 and gui vim.
 " Goals: easy on the eyes,
@@ -174,6 +174,113 @@ call s:Tungsten("Error"          , 9      , ""     , "NONE"      , "NONE")
 call s:Tungsten("Todo"           , 9      , 8      , "NONE"      , "NONE")
 
 " }}} Highlight groups
+" {{{ Treesitter groups
+
+" General
+call s:Tungsten("@variable"              , 6  , "" , "NONE" , "NONE") " same as Normal — plain identifiers
+call s:Tungsten("@variable.builtin"      , 12 , "" , "NONE" , "NONE") " self/this → steel blue like Number
+call s:Tungsten("@variable.parameter"    , 6  , "" , "NONE" , "NONE") " fn params — keep neutral
+call s:Tungsten("@variable.member"       , 6  , "" , "NONE" , "NONE") " struct fields — keep neutral
+call s:Tungsten("@constant"              , 11 , "" , "NONE" , "NONE") " → Constant (warm tan)
+call s:Tungsten("@constant.builtin"      , 11 , "" , "NONE" , "NONE") " true/false/nil → warm tan
+call s:Tungsten("@constant.macro"        , 14 , "" , "NONE" , "NONE") " → PreProc (cyan)
+call s:Tungsten("@module"                , 6  , "" , "NONE" , "NONE") " namespaces — neutral
+call s:Tungsten("@label"                 , 3  , "" , "NONE" , "NONE") " → Keyword color (muted yellow)
+
+" Strings
+call s:Tungsten("@string"                , 2  , "" , "NONE" , "NONE") " → String (sea green)
+call s:Tungsten("@string.escape"         , 14 , "" , "NONE" , "NONE") " escape sequences → cyan (stands out)
+call s:Tungsten("@string.special"        , 14 , "" , "NONE" , "NONE") " regex/special strings → cyan
+call s:Tungsten("@character"             , 1  , "" , "NONE" , "NONE") " → Character (brick red)
+call s:Tungsten("@number"                , 12 , "" , "NONE" , "NONE") " → Number (steel blue)
+call s:Tungsten("@number.float"          , 12 , "" , "NONE" , "NONE") " → Float (steel blue)
+call s:Tungsten("@boolean"               , 12 , "" , "NONE" , "NONE") " → Boolean (steel blue)
+
+" Functions
+call s:Tungsten("@function"              , 7  , "" , "NONE" , "NONE") " → Function (near white)
+call s:Tungsten("@function.builtin"      , 15 , "" , "NONE" , "NONE") " builtins slightly dimmer grey
+call s:Tungsten("@function.macro"        , 14 , "" , "NONE" , "NONE") " macros → cyan (PreProc)
+call s:Tungsten("@function.call"         , 7  , "" , "NONE" , "NONE") " call sites same as definition
+call s:Tungsten("@function.method"       , 7  , "" , "NONE" , "NONE") " methods → Function
+call s:Tungsten("@function.method.call"  , 7  , "" , "NONE" , "NONE")
+call s:Tungsten("@constructor"           , 11 , "" , "NONE" , "NONE") " constructors → Type color (warm tan)
+
+" Keywords
+call s:Tungsten("@keyword"               , 3  , "" , "NONE" , "NONE") " → Keyword (muted yellow)
+call s:Tungsten("@keyword.import"        , 14 , "" , "NONE" , "NONE") " import/include → PreProc (cyan)
+call s:Tungsten("@keyword.modifier"      , 3  , "" , "NONE" , "NONE") " static/const/mut → muted yellow
+call s:Tungsten("@keyword.return"        , 3  , "" , "NONE" , "NONE") " return → muted yellow
+call s:Tungsten("@keyword.operator"      , 1  , "" , "NONE" , "NONE") " and/or/not → brick (Operator)
+call s:Tungsten("@keyword.exception"     , 13 , "" , "NONE" , "NONE") " try/catch → dusty rose (Exception)
+call s:Tungsten("@keyword.conditional"   , 3  , "" , "NONE" , "NONE") " if/else → muted yellow
+call s:Tungsten("@keyword.repeat"        , 3  , "" , "NONE" , "NONE") " for/while → muted yellow
+call s:Tungsten("@keyword.type"          , 11 , "" , "NONE" , "NONE") " type/struct → warm tan (Type)
+
+" Types
+call s:Tungsten("@type"                  , 11 , "" , "NONE" , "NONE") " → Type (warm tan)
+call s:Tungsten("@type.builtin"          , 11 , "" , "NONE" , "NONE") " int/str builtins → warm tan
+call s:Tungsten("@type.definition"       , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@attribute"             , 14 , "" , "NONE" , "NONE") " decorators/annotations → cyan
+
+" Operators & Punctuation
+call s:Tungsten("@operator"              , 1  , "" , "NONE" , "NONE") " → Operator (brick red)
+call s:Tungsten("@punctuation.delimiter" , 15 , "" , "NONE" , "NONE") " , ; . → mid grey
+call s:Tungsten("@punctuation.bracket"   , 15 , "" , "NONE" , "NONE") " ( ) [ ] { } → mid grey
+call s:Tungsten("@punctuation.special"   , 14 , "" , "NONE" , "NONE") " interpolation braces → cyan
+
+" Comments
+call s:Tungsten("@comment"               , 4  , "" , "NONE" , "NONE") " → Comment (slate blue)
+call s:Tungsten("@comment.todo"          , 9  , 8  , "NONE" , "NONE") " TODO → Todo group colors
+call s:Tungsten("@comment.error"         , 9  , "" , "NONE" , "NONE") " FIXME/BUG → bright red
+call s:Tungsten("@comment.warning"       , 11 , "" , "NONE" , "NONE") " WARN → warm tan
+call s:Tungsten("@comment.note"          , 12 , "" , "NONE" , "NONE") " NOTE/INFO → steel blue
+
+" Tags (HTML/XML)
+call s:Tungsten("@tag"                   , 3  , "" , "NONE" , "NONE") " tag names → muted yellow
+call s:Tungsten("@tag.attribute"         , 2  , "" , "NONE" , "NONE") " tag attributes → sea green
+call s:Tungsten("@tag.delimiter"         , 15 , "" , "NONE" , "NONE") " < > / → mid grey
+
+" Markdown / Markup
+call s:Tungsten("@markup.heading"          , 7  , "" , "NONE"      , "NONE")      " headings → near white (Title-like)
+call s:Tungsten("@markup.heading.1"        , 7  , "" , "bold"      , "bold")      " H1 → near white bold
+call s:Tungsten("@markup.heading.2"        , 6  , "" , "NONE"      , "NONE")      " H2 → light grey
+call s:Tungsten("@markup.heading.3"        , 15 , "" , "NONE"      , "NONE")      " H3 → mid grey
+call s:Tungsten("@markup.heading.4"        , 15 , "" , "NONE"      , "NONE")      " H4 → mid grey
+call s:Tungsten("@markup.heading.5"        , 8  , "" , "NONE"      , "NONE")      " H5 → dark grey
+call s:Tungsten("@markup.heading.6"        , 8  , "" , "NONE"      , "NONE")      " H6 → dark grey
+call s:Tungsten("@markup.raw"              , 2  , "" , "NONE"      , "NONE")      " inline code → sea green (like String)
+call s:Tungsten("@markup.raw.block"        , 2  , "" , "NONE"      , "NONE")      " code blocks → sea green
+call s:Tungsten("@markup.quote"            , 12  , "" , "NONE"      , "NONE")      " > blockquotes → steel blue (Comment-like)
+call s:Tungsten("@markup.math"             , 14 , "" , "NONE"      , "NONE")      " math → cyan
+call s:Tungsten("@markup.link"             , 12 , "" , "NONE"      , "NONE")      " link text → steel blue
+call s:Tungsten("@markup.link.url"         , 4  , "" , "underline" , "underline") " URLs → slate, underlined
+call s:Tungsten("@markup.link.label"       , 14 , "" , "NONE"      , "NONE")      " ref labels → cyan blue
+call s:Tungsten("@markup.list"             , 11 , "" , "NONE"      , "NONE")      " list bullets/numbers → warm tan
+call s:Tungsten("@markup.list.checked"     , 2  , "" , "NONE"      , "NONE")      " [x] → sea green
+call s:Tungsten("@markup.list.unchecked"   , 15 , "" , "NONE"      , "NONE")      " [ ] → mid grey
+call s:Tungsten("@markup.strong"           , 7  , "" , "bold"      , "bold")      " **bold** → near white bold
+call s:Tungsten("@markup.italic"           , 6  , "" , "italic"    , "italic")    " _italic_ → light grey italic
+call s:Tungsten("@markup.strikethrough"    , 8  , "" , "NONE"      , "NONE")      " ~~strike~~ → dark grey
+
+" LSP Semantic Tokens
+call s:Tungsten("@lsp.type.class"          , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.decorator"      , 14 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.enum"           , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.enumMember"     , 12 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.function"       , 7  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.interface"      , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.macro"          , 14 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.method"         , 7  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.namespace"      , 6  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.parameter"      , 6  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.property"       , 6  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.struct"         , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.type"           , 11 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.type.variable"       , 6  , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.mod.readonly"        , 12 , "" , "NONE" , "NONE")
+call s:Tungsten("@lsp.mod.deprecated"      , 8  , "" , "NONE" , "NONE")
+
+" }}} Treesitter groups
 " {{{ Misc
 
 " TagHighlight
